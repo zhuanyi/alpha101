@@ -1,0 +1,9 @@
+{
+  "runs": 1000,
+  "reference_gross_cagr": 0.056714773066391944,
+  "reference_gross_sharpe": 0.43246164034826623,
+  "pct_cagr": 44.3,
+  "pct_sharpe": 46.9,
+  "placebo_gross_cagr_mean": 0.05847664797246844,
+  "placebo_gross_sharpe_mean": 0.4404149769173612
+}

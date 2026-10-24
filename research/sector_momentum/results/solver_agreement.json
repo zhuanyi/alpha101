@@ -1,0 +1,7 @@
+{
+  "n_weight_vectors": 6866,
+  "max_abs_weight_diff": 0.19976975997259477,
+  "p99_abs_weight_diff": 0.14871114177944475,
+  "cagr_cvxpy": 0.010107276282284028,
+  "cagr_fast": 0.010251721659360724
+}

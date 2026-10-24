@@ -1,0 +1,11 @@
+# Copy to a private file, fill in, and export before running anything that touches the database.
+# Nothing in this repository needs these for the synthetic-data tests.
+export ALPHA101_DB_HOST=db.example.invalid
+export ALPHA101_DB_PORT=3306
+export ALPHA101_DB_NAME=alpha101
+export ALPHA101_DB_USER=readonly_user
+export ALPHA101_DB_PASSWORD=change-me
+export ALPHA101_DB_WRITE_USER=writer_user
+export ALPHA101_DB_WRITE_PASSWORD=change-me
+# Optional: contact string appended to the User-Agent of the Wikipedia constituent downloads.
+export ALPHA101_CONTACT=
