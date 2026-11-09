@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alpha101"
+version = "0.1.0"
+description = "Formulaic-alpha research engine, retail cost models and documented studies (Kakushadze 2016, 101 Formulaic Alphas)"
+license = {text = "MIT"}
+authors = [{name = "zhuanyi"}]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2.0", "pandas>=3.0", "scipy>=1.11", "pyyaml>=6", "pyarrow>=15"]
+
+[project.optional-dependencies]
+data = ["pymysql>=1.1", "yfinance>=1.0"]
+report = ["matplotlib>=3.8", "statsmodels>=0.14"]
+research = ["cvxpy>=1.4"]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"alpha101.formulas" = ["*.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "research/sector_momentum/tests"]
+pythonpath = ["src"]
+addopts = "-ra"
